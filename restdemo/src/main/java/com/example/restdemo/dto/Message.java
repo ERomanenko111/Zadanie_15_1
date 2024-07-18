@@ -1,8 +1,14 @@
 package com.example.restdemo.dto;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.time.LocalDateTime;
 
+@Entity
 public class Message {
+    @Id
+    @GeneratedValue
     private int id;
     private String title;
     private String text;
